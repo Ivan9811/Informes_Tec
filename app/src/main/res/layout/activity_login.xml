@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4D4D4D"
+    tools:context=".Activities.LoginActivity">
+
+    <ImageView
+        android:id="@+id/logoapp"
+        android:layout_width="158dp"
+        android:layout_height="158dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toStartOf="@+id/NombreApp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/logoapp_foreground" />
+
+    <TextView
+        android:id="@+id/NombreApp"
+        android:layout_width="237dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="28dp"
+        android:fontFamily="@font/tiro_devanagari_hindi"
+        android:text="Informes Tec"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/logoapp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.638" />
+
+    <TextView
+        android:id="@+id/TextoIntroduccion"
+        android:layout_width="366dp"
+        android:layout_height="97dp"
+        android:fontFamily="@font/tiro_devanagari_hindi"
+        android:text="La aventura está por iniciar, por favor inicia sesión"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoapp"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/userypasword"
+        android:layout_width="130dp"
+        android:layout_height="139dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextoIntroduccion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.049"
+        app:srcCompat="@mipmap/userypassword" />
+
+    <Button
+        android:id="@+id/buttonUser"
+        android:layout_width="285dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="28dp"
+        android:backgroundTint="#FFFFFF"
+        app:cornerRadius="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toEndOf="@+id/userypasword"
+        app:layout_constraintTop_toBottomOf="@+id/TextoIntroduccion" />
+
+    <Button
+        android:id="@+id/buttonPassword"
+        android:layout_width="285dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FFFFFF"
+        app:cornerRadius="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/userypasword"
+        app:layout_constraintTop_toBottomOf="@+id/buttonUser" />
+
+    <Button
+        android:id="@+id/Ingresar"
+        android:layout_width="256dp"
+        android:layout_height="71dp"
+        android:backgroundTint="#23B6E2"
+        android:fontFamily="@font/tiro_devanagari_hindi"
+        android:text="Ingresar"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPassword"
+        app:layout_constraintVertical_bias="0.12" />
+
+    <TextView
+        android:id="@+id/recuperarcontraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/tiro_devanagari_hindi"
+        android:text="Recupera Tu Contraseña"
+        android:textAlignment="center"
+        android:textColor="#B3F306"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Ingresar"
+        app:layout_constraintVertical_bias="0.047" />
+
+    <Button
+        android:id="@+id/IngresoGoogle"
+        android:layout_width="343dp"
+        android:layout_height="59dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/tiro_devanagari_hindi"
+        android:text="Ingresa Con Google"
+        android:textAlignment="viewEnd"
+        android:textColor="#050505"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recuperarcontraseña"
+        app:layout_constraintVertical_bias="0.322" />
+
+    <ImageView
+        android:id="@+id/google"
+        android:layout_width="45dp"
+        android:layout_height="42dp"
+        app:layout_constraintBottom_toBottomOf="@+id/IngresoGoogle"
+        app:layout_constraintEnd_toEndOf="@+id/IngresoGoogle"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="@+id/IngresoGoogle"
+        app:layout_constraintTop_toTopOf="@+id/IngresoGoogle"
+        app:layout_constraintVertical_bias="0.47"
+        app:srcCompat="@mipmap/google" />
+
+    <TextView
+        android:id="@+id/NoTienesCuenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/tiro_devanagari_hindi"
+        android:text="No tienes cuenta?"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IngresoGoogle"
+        app:layout_constraintVertical_bias="0.134" />
+
+    <TextView
+        android:id="@+id/RegistratePregunta"
+        android:layout_width="96dp"
+        android:layout_height="32dp"
+        android:text="Regístrate"
+        android:textAlignment="center"
+        android:textColor="#B3F306"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.029"
+        app:layout_constraintStart_toEndOf="@+id/NoTienesCuenta"
+        app:layout_constraintTop_toBottomOf="@+id/IngresoGoogle"
+        app:layout_constraintVertical_bias="0.134" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
