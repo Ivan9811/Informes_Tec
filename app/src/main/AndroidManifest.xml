@@ -6,24 +6,24 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/logoappicon"
-        android:label="@string/app_name"
+        android:label="@string/nombre_app"
         android:roundIcon="@mipmap/logoappicon_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Taller2">
         <activity
-            android:name=".Activities.SplashActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Activities.LoginActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Activities.HomeActivity"
-            android:exported="false" />
-        <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".Activities.SignActivity"
+            android:name=".Activities.Auth.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.inicio.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Auth.SignActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.inicio.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

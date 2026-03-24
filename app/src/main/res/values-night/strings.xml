@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="mi_tienda">Mi tienda</string>
+    <string name="inicio">Inicio</string>
+    <string name="catalogo">catalogo</string>
+    <string name="carrito">carrito</string>
+    <string name="perfil">perfil</string>
+</resources>

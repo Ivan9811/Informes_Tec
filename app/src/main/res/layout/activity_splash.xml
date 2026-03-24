@@ -3,26 +3,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:background="#4D4D4D"
+    android:background="@color/fondo_inicio"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_horizontal"
-    tools:context=".Activities.HomeActivity">
-
+    tools:context=".Activities.inicio.HomeActivity">
 
     <Space
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2" />
 
-
     <ImageView
         android:id="@+id/logoapp"
         android:layout_width="220dp"
         android:layout_height="220dp"
+        android:contentDescription="@string/nombre_app"
         app:srcCompat="@mipmap/logoapp_foreground" />
-
 
     <TextView
         android:id="@+id/NombreApp"
@@ -30,17 +28,15 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/tiro_devanagari_hindi"
-        android:text="Informes Tec"
-        android:textColor="#FFFFFF"
+        android:text="@string/nombre_app"
+        android:textColor="@color/texto_principal"
         android:textSize="42sp"
         android:textStyle="bold" />
-
 
     <Space
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="3" />
-
 
     <TextView
         android:id="@+id/TuNombre"
@@ -49,8 +45,8 @@
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="24dp"
         android:fontFamily="@font/tiro_devanagari_hindi"
-        android:text="Ivan Dario Ramirez Casallas"
-        android:textColor="#FFFFFF"
+        android:text="@string/nombre_autor"
+        android:textColor="@color/texto_principal"
         android:textSize="18sp"
         android:textStyle="italic"
         android:gravity="end" />

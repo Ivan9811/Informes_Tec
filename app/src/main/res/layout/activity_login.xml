@@ -8,9 +8,8 @@
     android:gravity="center"
     android:orientation="vertical"
     android:paddingHorizontal="24dp"
-    android:background="#4D4D4D"
-    tools:context=".Activities.LoginActivity">
-
+    android:background="@color/fondo_inicio"
+    tools:context=".Activities.Auth.LoginActivity">
 
     <LinearLayout
         android:layout_width="309dp"
@@ -23,6 +22,7 @@
             android:id="@+id/logoapp"
             android:layout_width="120dp"
             android:layout_height="120dp"
+            android:contentDescription="@string/nombre_app"
             app:srcCompat="@mipmap/logoapp_foreground" />
 
         <TextView
@@ -31,12 +31,11 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:fontFamily="@font/tiro_devanagari_hindi"
-            android:text="Informes Tec"
-            android:textColor="#FFFFFF"
+            android:text="@string/nombre_app"
+            android:textColor="@color/texto_principal"
             android:textSize="28sp"
             android:textStyle="bold" />
     </LinearLayout>
-
 
     <TextView
         android:id="@+id/TextoIntroduccion"
@@ -44,12 +43,11 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:fontFamily="@font/tiro_devanagari_hindi"
-        android:text="La aventura está por iniciar, por favor inicia sesión"
+        android:text="@string/texto_bienvenida"
         android:textAlignment="center"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/texto_principal"
         android:textSize="18sp"
         android:textStyle="normal" />
-
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -58,20 +56,18 @@
         android:gravity="center_vertical"
         android:layout_marginBottom="4dp">
 
-
         <ImageView
             android:id="@+id/userypasword"
             android:layout_width="wrap_content"
             android:layout_height="143dp"
             android:layout_marginEnd="10dp"
+            android:contentDescription="@string/hint_usuario"
             app:srcCompat="@mipmap/userypassword" />
-
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
 
             <EditText
                 android:id="@+id/ingresarusuario"
@@ -81,14 +77,13 @@
                 android:background="@drawable/stylearea"
                 android:fontFamily="@font/tiro_devanagari_hindi"
                 android:gravity="center_vertical"
-                android:hint="Usuario"
+                android:hint="@string/hint_usuario"
                 android:inputType="textEmailAddress"
                 android:paddingStart="12dp"
                 android:paddingEnd="12dp"
-                android:textColor="#050505"
-                android:textColorHint="#AAAAAA"
+                android:textColor="@color/texto_oscuro"
+                android:textColorHint="@color/texto_hint"
                 android:textSize="16sp" />
-
 
             <EditText
                 android:id="@+id/ingresarpassword"
@@ -97,17 +92,16 @@
                 android:background="@drawable/stylearea"
                 android:fontFamily="@font/tiro_devanagari_hindi"
                 android:gravity="center_vertical"
-                android:hint="Contraseña"
+                android:hint="@string/hint_contrasena"
                 android:inputType="textPassword"
                 android:paddingStart="12dp"
                 android:paddingEnd="12dp"
-                android:textColor="#050505"
-                android:textColorHint="#AAAAAA"
+                android:textColor="@color/texto_oscuro"
+                android:textColorHint="@color/texto_hint"
                 android:textSize="16sp" />
 
         </LinearLayout>
     </LinearLayout>
-
 
     <Button
         android:id="@+id/btnIngresar"
@@ -115,14 +109,13 @@
         android:layout_height="56dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="8dp"
-        android:backgroundTint="#23B6E2"
+        android:backgroundTint="@color/boton_primario"
         android:fontFamily="@font/tiro_devanagari_hindi"
-        android:text="Ingresar"
-        android:textColor="#FFFFFF"
+        android:text="@string/boton_ingresar"
+        android:textColor="@color/texto_principal"
         android:textSize="22sp"
         android:textStyle="bold"
         android:stateListAnimator="@null" />
-
 
     <TextView
         android:id="@+id/recuperarcontraseña"
@@ -130,11 +123,10 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:fontFamily="@font/tiro_devanagari_hindi"
-        android:text="Recupera Tu Contraseña"
+        android:text="@string/recuperar_contrasena"
         android:textAlignment="center"
-        android:textColor="#B3F306"
+        android:textColor="@color/texto_accion"
         android:textSize="16sp" />
-
 
     <LinearLayout
         android:id="@+id/IngresoGoogle"
@@ -151,17 +143,17 @@
             android:layout_width="28dp"
             android:layout_height="28dp"
             android:layout_marginEnd="10dp"
+            android:contentDescription="@string/ingresar_google"
             app:srcCompat="@mipmap/google" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/tiro_devanagari_hindi"
-            android:text="Ingresa con Google"
-            android:textColor="#050505"
+            android:text="@string/ingresar_google"
+            android:textColor="@color/texto_oscuro"
             android:textSize="18sp" />
     </LinearLayout>
-
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -174,8 +166,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/tiro_devanagari_hindi"
-            android:text="No tienes cuenta? "
-            android:textColor="#FFFFFF"
+            android:text="@string/no_tienes_cuenta"
+            android:textColor="@color/texto_principal"
             android:textSize="16sp" />
 
         <TextView
@@ -183,8 +175,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/tiro_devanagari_hindi"
-            android:text="Regístrate"
-            android:textColor="#B3F306"
+            android:text="@string/registrate"
+            android:textColor="@color/texto_accion"
             android:textSize="16sp" />
     </LinearLayout>
 

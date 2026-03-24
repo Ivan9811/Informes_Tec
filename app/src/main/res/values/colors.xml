@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="fondo_inicio">#4D4D4D</color>
+    <color name="texto_principal">#FFFFFF</color>
+    <color name="boton_primario">#23B6E2</color>
+    <color name="boton_onda">#6382DE</color>
+    <color name="texto_registrate">#B3F306</color>
+    <color name="texto_accion">#B3F306</color>
+    <color name="texto_hint">#AAAAAA</color>
+    <color name="texto_oscuro">#050505</color>
 </resources>
