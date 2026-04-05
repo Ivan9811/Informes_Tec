@@ -5,4 +5,11 @@
     <string name="catalogo">catalogo</string>
     <string name="carrito">carrito</string>
     <string name="perfil">perfil</string>
+    <string name="nombres">Nombres</string>
+    <string name="crear_cuenta">Crear Cuenta</string>
+    <string name="favoritos">Favoritos</string>
+    <string name="administrar">Administrar</string>
+    <string name="usuarios">Usuarios</string>
+    <string name="productos_destacados">PRODUCTOS DESTACADOS</string>
+    <string name="imagen_del_producto">imagen del producto</string>
 </resources>

@@ -18,7 +18,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
         android:fontFamily="@font/tiro_devanagari_hindi"
-        android:text="Crear Cuenta"
+        android:text="@string/crear_cuenta"
         android:textColor="@color/texto_principal"
         android:textSize="36sp"
         android:textStyle="bold" />
@@ -40,7 +40,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="4dp"
                 android:fontFamily="@font/tiro_devanagari_hindi"
-                android:text="Nombres"
+                android:text="@string/nombres"
                 android:textColor="@color/texto_principal"
                 android:textSize="14sp" />
 

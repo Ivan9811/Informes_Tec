@@ -20,5 +20,13 @@
 
     <string name="navigation_drawer_open">Abrir menú</string>
     <string name="navigation_drawer_close">Cerrar menú</string>
+    <string name="nombres">Nombres</string>
+    <string name="crear_cuenta">Crear Cuenta</string>
+    <string name="favoritos">Favoritos</string>
+    <string name="administrar">Administrar</string>
+    <string name="usuarios">Usuarios</string>
+    <string name="productos_destacados">PRODUCTOS DESTACADOS</string>
+    <string name="imagen_del_producto">imagen del producto</string>
+    <string name="agregar_al_carrito">agregar al carrito</string>
 
 </resources>

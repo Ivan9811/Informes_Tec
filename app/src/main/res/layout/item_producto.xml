@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/img_producto"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="center"
+            android:contentDescription="@string/imagen_del_producto"
+            />
+
+        <TextView
+            android:id="@+id/tv_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/fondo_inicio"
+            />
+
+        <TextView
+            android:id="@+id/tv_precio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="14sp"
+            android:textColor="@color/fondo_inicio"
+            />
+
+        <Button
+            android:id="@+id/btn_agregar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/agregar_al_carrito"
+            android:textSize="12sp"
+            android:textColor="@color/texto_principal"
+            android:backgroundTint="@color/fondo_inicio"
+            />
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>
