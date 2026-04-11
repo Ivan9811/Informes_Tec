@@ -28,5 +28,20 @@
     <string name="productos_destacados">PRODUCTOS DESTACADOS</string>
     <string name="imagen_del_producto">imagen del producto</string>
     <string name="agregar_al_carrito">agregar al carrito</string>
+    <string name="editar_perfil">Editar Perfil</string>
+    <string name="ingresa_tus_nombres">Ingresa tus nombres</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="ingresa_tus_apellidos">Ingresa tus apellidos</string>
+    <string name="correo_electr_nico">Correo Electrónico</string>
+    <string name="correo_ejemplo_com">correo@ejemplo.com</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="repetir_contrase_a">Repetir Contraseña</string>
+    <string name="repite_tu_contrase_a">Repite tu contraseña</string>
+    <string name="acepto_los">Acepto los</string>
+    <string name="t_rminos_y_condiciones">términos y condiciones</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="ya_tienes_cuenta">¿Ya tienes cuenta?</string>
+    <string name="inicia_sesi_n">Inicia sesión</string>
+    <string name="guardar">Guardar</string>
 
 </resources>

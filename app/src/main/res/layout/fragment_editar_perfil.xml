@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/fondo_inicio"
+    android:gravity="center"
+    android:paddingHorizontal="24dp"
+    android:paddingTop="40dp"
+    android:paddingBottom="32dp">
+
+    <TextView
+        android:id="@+id/TituloEditar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/tiro_devanagari_hindi"
+        android:text="@string/editar_perfil"
+        android:textColor="@color/texto_principal"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <!-- Nombres -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/tiro_devanagari_hindi"
+                android:text="@string/nombres"
+                android:textColor="@color/texto_principal"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/inputEditNombres"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/stylearea"
+                android:fontFamily="@font/tiro_devanagari_hindi"
+                android:gravity="center_vertical"
+                android:hint="@string/ingresa_tus_nombres"
+                android:inputType="textPersonName"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textColor="@color/texto_oscuro"
+                android:textColorHint="@color/texto_hint"
+                android:textSize="16sp" />
+
+            <!-- Apellidos -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/tiro_devanagari_hindi"
+                android:text="@string/apellidos"
+                android:textColor="@color/texto_principal"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/inputEditApellidos"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/stylearea"
+                android:fontFamily="@font/tiro_devanagari_hindi"
+                android:gravity="center_vertical"
+                android:hint="@string/ingresa_tus_apellidos"
+                android:inputType="textPersonName"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textColor="@color/texto_oscuro"
+                android:textColorHint="@color/texto_hint"
+                android:textSize="16sp" />
+
+            <!-- Correo -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/tiro_devanagari_hindi"
+                android:text="@string/correo_electr_nico"
+                android:textColor="@color/texto_principal"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/inputEditCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/stylearea"
+                android:fontFamily="@font/tiro_devanagari_hindi"
+                android:gravity="center_vertical"
+                android:hint="@string/correo_ejemplo_com"
+                android:inputType="textEmailAddress"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textColor="@color/texto_oscuro"
+                android:textColorHint="@color/texto_hint"
+                android:textSize="16sp" />
+
+            <!-- Botón Guardar -->
+            <Button
+                android:id="@+id/btnGuardarPerfil"
+                android:layout_width="220dp"
+                android:layout_height="56dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="@color/boton_primario"
+                android:fontFamily="@font/tiro_devanagari_hindi"
+                android:text="@string/guardar"
+                android:textColor="@color/texto_principal"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:stateListAnimator="@null" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

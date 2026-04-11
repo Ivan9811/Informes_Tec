@@ -9,6 +9,8 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.taller2.R
 
+import com.example.taller2.Activities.main.productos.ProductoAdapter
+import com.example.taller2.Activities.main.productos.product
 
 class HomeFragment : Fragment() {
 
@@ -31,3 +33,4 @@ class HomeFragment : Fragment() {
         return view
     }
 }
+
