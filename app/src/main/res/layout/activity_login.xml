@@ -118,6 +118,17 @@
         android:stateListAnimator="@null" />
 
     <TextView
+        android:id="@+id/ingresarHuella"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/tiro_devanagari_hindi"
+        android:text="@string/ingresar_con_huella_dactilar"
+        android:textAlignment="center"
+        android:textColor="@color/texto_accion"
+        android:textSize="16sp" />
+
+    <TextView
         android:id="@+id/recuperarcontraseña"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

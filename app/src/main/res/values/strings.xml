@@ -43,5 +43,6 @@
     <string name="ya_tienes_cuenta">¿Ya tienes cuenta?</string>
     <string name="inicia_sesi_n">Inicia sesión</string>
     <string name="guardar">Guardar</string>
+    <string name="ingresar_con_huella_dactilar">Ingresar con huella dactilar</string>
 
 </resources>
