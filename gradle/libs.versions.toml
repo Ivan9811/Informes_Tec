@@ -15,6 +15,7 @@ kotlin = "1.9.24"
 googleid = "1.1.1"
 credentialManager = "1.6.0"
 biometric = "1.1.0"
+coil= "2.6.0"
 
 
 
@@ -36,6 +37,9 @@ google-id = { module ="com.google.android.libraries.identity.googleid:googleid",
 credential-manager = { module = "androidx.credentials:credentials", version.ref = "credentialManager" }
 credential-manager-play = { module = "androidx.credentials:credentials-play-services-auth", version.ref = "credentialManager" }
 biometric = {module= "androidx.biometric:biometric", version.ref="biometric"}
+coil = { module = "io.coil-kt:coil", version.ref = "coil" }
+supabase-storage = { module = "io.github.jan-tennert.supabase:storage-kt"}
+
 
 
 [plugins]

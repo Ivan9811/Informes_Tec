@@ -28,4 +28,11 @@
     <string name="inicia_sesi_n">Inicia sesión</string>
     <string name="guardar">Guardar</string>
     <string name="ingresar_con_huella_dactilar">Ingresar con huella dactilar</string>
+    <string name="cerrar_sesi_n">Cerrar sesión</string>
+    <string name="cliente">cliente</string>
+    <string name="nombre_apellido">Nombre Apellido</string>
+    <string name="cambiar_foto">Cambiar foto</string>
+    <string name="nombre">nombre</string>
+    <string name="apellido">Apellido</string>
+    <string name="mi_perfil">Mi Perfil</string>
 </resources>

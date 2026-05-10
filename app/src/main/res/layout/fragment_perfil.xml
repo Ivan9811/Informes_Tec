@@ -1,14 +1,175 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activities.main.perfil.PerfilFragment">
+    android:orientation="vertical"
+    android:background="@color/fondo_inicio"
+    android:gravity="center"
+    android:paddingHorizontal="24dp"
+    android:paddingTop="40dp"
+    android:paddingBottom="32dp">
 
-    <!-- TODO: Update blank fragment layout -->
+    <!-- Título -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/tiro_devanagari_hindi"
+        android:text="@string/mi_perfil"
+        android:textColor="@color/texto_principal"
+        android:textSize="36sp"
+        android:textStyle="bold" />
 
-</FrameLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <!-- Foto de perfil + botón cambiar -->
+            <RelativeLayout
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/imgFotoPerfil"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/account"
+                    android:clipToOutline="true"
+                    android:background="@drawable/stylearea" />
+
+                <ImageButton
+                    android:id="@+id/btnCambiarFoto"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:backgroundTint="@color/boton_primario"
+                    android:src="@drawable/admin_settings"
+                    android:contentDescription="@string/cambiar_foto"
+                    android:padding="6dp" />
+            </RelativeLayout>
+
+            <!-- Nombre completo -->
+            <TextView
+                android:id="@+id/txtNombreCompleto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/tiro_devanagari_hindi"
+                android:text="@string/nombre_apellido"
+                android:textColor="@color/texto_principal"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp" />
+
+            <!-- Rol -->
+            <TextView
+                android:id="@+id/txtRol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/tiro_devanagari_hindi"
+                android:text="@string/cliente"
+                android:textColor="@color/texto_hint"
+                android:textSize="13sp"
+                android:textAllCaps="true"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Correo -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/tiro_devanagari_hindi"
+                android:text="@string/correo_electr_nico"
+                android:textColor="@color/texto_principal"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/stylearea"
+                android:fontFamily="@font/tiro_devanagari_hindi"
+                android:gravity="center_vertical"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:text="@string/correo_ejemplo_com"
+                android:textColor="@color/texto_oscuro"
+                android:textSize="16sp" />
+
+            <!-- Nombre -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/tiro_devanagari_hindi"
+                android:text="@string/nombres"
+                android:textColor="@color/texto_principal"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtNombre"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/stylearea"
+                android:fontFamily="@font/tiro_devanagari_hindi"
+                android:gravity="center_vertical"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:text="@string/ejemplo"
+                android:textColor="@color/texto_oscuro"
+                android:textSize="16sp" />
+
+            <!-- Apellido -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/tiro_devanagari_hindi"
+                android:text="@string/apellidos"
+                android:textColor="@color/texto_principal"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtApellido"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/stylearea"
+                android:fontFamily="@font/tiro_devanagari_hindi"
+                android:gravity="center_vertical"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:text="@string/ejemplo"
+                android:textColor="@color/texto_oscuro"
+                android:textSize="16sp" />
+
+            <!-- Botón editar perfil -->
+            <Button
+                android:id="@+id/btnEditarPerfil"
+                android:layout_width="220dp"
+                android:layout_height="56dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="@color/boton_primario"
+                android:fontFamily="@font/tiro_devanagari_hindi"
+                android:text="@string/editar_perfil"
+                android:textColor="@color/texto_principal"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:stateListAnimator="@null" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
